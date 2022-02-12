@@ -1,0 +1,508 @@
+body
+{
+    margin: 0px;
+}
+
+.mobile
+{
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+.container
+{
+    position: relative;
+    color: white;
+}
+
+.navbar
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 35px ;
+    left: 150px;
+}
+
+.navbar h3
+{
+    font-family: 'Alata', sans-serif;
+    font-size: 22px;
+}
+
+#options
+{
+    display: flex;
+    margin-left: 600px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 6px;
+    
+}
+
+#options h5
+{
+    margin-left: 25px;
+}
+
+#Text
+{
+    position: absolute;
+    width: 540px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: white;
+    padding: 30px;
+    line-height : 64px;
+    top: 120px;
+    left:0px;
+    
+}
+
+.midpart
+{
+    margin-top: 160px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#content
+{
+    position:absolute;
+    opacity: 100%;
+    right: 105px;
+    top: 149px;
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 95px;
+    padding-bottom: 20px;
+    
+}
+
+#content h2
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+#content p
+{
+    font-family: 'Alata', sans-serif;
+    font-size: 16px;
+    opacity: 76%;
+}
+
+.line
+{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 120px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.line h2
+{
+    text-transform: capitalize;
+    font-size: 41px;
+}   
+
+button
+{
+    border-style: solid;
+    justify-content: center;
+    background: none;
+    height: 40px;
+    width: 140px;
+    margin-top: 30px;
+    font-size: 14px;
+
+}
+
+#gallery
+{
+    margin-left: 120px;
+    margin-top: 55px;
+    display: grid;
+    grid-template: 450px 450px / 250px 250px 250px 250px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+#gallery h5
+{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 28px;
+    position: absolute;   
+}
+
+.container1 h5
+{
+    top: 292px;
+    left: 40px;
+    font-weight: 100;
+}
+
+.container2 h5
+{
+    top: 292px;
+    left: 330px;
+    font-weight: 100;
+}
+
+.container3 h5
+{
+    top: 292px;
+    left: 615px;
+    font-weight: 100;
+}
+
+.container4 h5
+{
+    top: 292px;
+    right: 253px;
+    font-weight: 100;
+}
+
+.container5 h5
+{
+    top: 780px;
+    left: 37px;
+    font-weight: 100;
+}
+
+.container6 h5
+{
+    top: 780px;
+    left: 330px;
+    font-weight: 100;
+}
+
+.container7 h5
+{
+    top: 780px;
+    left: 615px;
+    font-weight: 100;
+}
+
+.container8 h5
+{
+    top: 780px;
+    right: 199px;
+    font-weight: 100;
+}
+
+footer
+{
+    background: black;
+    height: 150px;
+    padding-top: 25px;
+}
+
+.firstline
+{
+    display: flex;
+    color: white;
+    font-family: 'Alata', sans-serif;
+    margin-left: 116px;
+}
+
+.iconsd
+{
+    margin-left: 854px;
+    margin-top: 25px;
+}
+
+.iconsm{
+    display:none;
+}
+
+.secondline
+{
+    display:flex;
+    color: white;
+}
+
+.opt
+{
+    display: flex;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin-left: 116px;
+}
+
+.secondline h4
+{
+    margin-left: 585px;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 67%;
+    font-weight: 100;
+}
+
+input[type="checkbox"]{
+    display: none;
+  }
+
+@media(max-width: 361px)
+{
+    .container
+    {
+        width: 190%;
+        height: auto;
+        margin-left: -59%;
+    }
+
+    .navbar
+    {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        top: 5px ;
+    }
+
+    .navbar h3 {
+        margin-left: 82px;
+        margin-top: 21px;
+        font-size: 16px;
+    }
+
+    #options
+    {
+        display:none;
+    }
+     
+    nav {
+        display: block;
+        z-index: 1;
+        margin-left: 218px;
+        margin-top: 26px;
+    }
+    nav .menu-btn i{
+        display: block;
+      }
+
+      #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+      nav ul {
+        position: fixed;
+        top: 80px;
+        left: -112%;
+        background: rgb(24, 24, 24);
+        height: 100vh;
+        width: 100%;
+        z-index: 0;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ ul {
+        left: -98px;
+        top: 44px;
+    }
+      nav ul li{
+        width: 100%;
+        margin: 40px 0;
+      }
+      nav ul li a{
+        width: 100%;
+        margin-left: -100%;
+        text-decoration: none;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        list-style: none;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      #click:checked ~ ul li a{
+        margin-left: 0px;
+      }
+
+    #Text {
+        top: 57px;
+        left: 81px;
+        font-size: 31px;
+        line-height: 30px;
+        padding: 22px;
+        width: 220px;
+    }
+    
+    #content {
+        margin: 0px 0px 0px 0px;
+        position: relative;
+        margin-top: -144px;
+        margin-right: -45px;
+        opacity: 100%;
+        background-color: white;
+        padding-left: 90px;
+        padding-right: -24px;
+    }
+
+    #content h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 27px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0px 0px 0px 66px;
+    }
+
+    #content p {
+        font-family: 'Alata', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        opacity: 76%;
+        margin-left: 69px;
+        margin-top: 25px;
+    }
+
+    .midpart {
+        margin-top: 91px;
+        margin-left: -1px;
+        position: absolute;
+        margin-right: 0px;
+    }
+
+    img.responsive2 {
+        width: 83%;
+        margin-left: 31px;
+    }
+
+    .line {
+        display: flex;
+        margin-top: 692px;
+        margin-left: 12px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .line h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 43px;
+    }
+
+    .line button
+    {
+        display: none;
+    }
+
+    #gallery {
+        margin-left: 54px;
+        margin-top: 25px;
+        display: grid;
+        grid-template: 85px 85px 85px 85px 85px 85px 85px 85px / 254px;
+        grid-row-gap: 20px;
+        grid-column-gap: 40px;
+        position: relative;
+    }
+    img.Images{
+        width: 254px;
+        height: 85px;
+        object-fit: cover;
+        object-position: 20% 10%;
+    }
+
+    #gallery h5
+    {
+        font-size: 20px;
+    }
+
+    .container1 h5
+    {
+        top: 0px;
+        left: 15px;
+    }
+
+    .container2 h5
+    {
+        top: 95px;
+        left: 15px;
+    }
+
+    .container3 h5
+    {
+        top: 210px;
+        left: 15px;
+    }
+
+    .container4 h5 {
+        top: 317px;
+        left: 15px;
+    }
+
+    .container5 h5 {
+        top: 420px;
+        left: 15px;
+    }
+
+    .container6 h5 {
+        top: 523px;
+        left: 15px;
+    }
+
+    .container7 h5 {
+        top: 628px;
+        left: 15px;
+    }
+
+    .container8 h5 {
+        top: 732px;
+        left: 15px;
+    }
+
+    footer {
+        background: black;
+        height: 343px;
+        padding-top: 25px;
+    }
+
+    .firstline
+    {
+        display: block;
+    }
+
+    .firstline h2 {
+        font-size: 17px;
+        margin-right: -10px;
+        margin-left: 23px;
+    }
+
+    .opt {
+        display: block;
+        margin-top: -7px;
+        margin-left: 164px;
+    }
+
+    .iconsd{
+        display: none;
+    }
+
+    .iconsm {
+        display: flex;
+        margin-left: -108px;
+        margin-top: 199px;
+    }
+
+    .secondline h4 {
+        margin-left: -212px;
+        margin-top: 247px;
+        font-family: 'Josefin Sans', sans-serif;
+        opacity: 67%;
+        font-weight: 100;
+    }
+
+}
+    
